@@ -20,7 +20,7 @@ public class Hanoi {
     private static void hanoiLocal(int n, String a, String b, String c) {
         if (n != 0) {
             hanoiLocal(n - 1, a, c, b);
-            System.out.printf("Transfer a ring from %s to %s\n", a, c);
+            System.out.printf("Transfer a ring %d from %s to %s\n",n, a, c);
             hanoiLocal(n - 1, b, a, c);
         }
     }

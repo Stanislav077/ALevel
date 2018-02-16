@@ -15,7 +15,7 @@ public class randomArray1 {
         int[][] array = new int[8][5];
         for (int i =0; i < 8; i++){
             for (int j = 0; j < 5; j++){
-                int ran = 10 + random.nextInt(100 - 10);
+                int ran = 10 + random.nextInt(90);
                 array[i][j] = ran;
                 System.out.print(array[i][j] + " ");
             }
