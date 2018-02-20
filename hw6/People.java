@@ -36,7 +36,7 @@ class Main {
 class People {
 
     static int height;
-    int weight;
+    static int weight;
 
     People(int height, int weight) {
         this.height = height;
@@ -78,8 +78,8 @@ class People {
 
 class Warrior extends People {
 
-    String weapon;
-    String martialArts;
+    static String weapon;
+    static String martialArts;
 
     Warrior() {
 
@@ -128,8 +128,8 @@ class Warrior extends People {
 
 class Farmer extends People {
 
-    String attachment;
-    int squareLand;
+    static String attachment;
+    static int squareLand;
 
     Farmer() {
 

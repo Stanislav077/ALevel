@@ -37,9 +37,9 @@ class Main1 {
 
 class Staff {
 
-    boolean talk;
-    String university;
-    String duties;
+    static boolean talk;
+    static String university;
+    static String duties;
 
     Staff() {
 
@@ -121,8 +121,8 @@ class Student extends Staff {
 
 class ExcellentStudent extends Student {
 
-    String name;
-    int[] mark;
+    static String name;
+    static int[] mark;
 
     ExcellentStudent(String name) {
         this.name = name;

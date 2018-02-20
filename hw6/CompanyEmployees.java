@@ -23,8 +23,8 @@ class Main2 {
 
 public class CompanyEmployees {
 
-    String name;
-    String position;
+    static String name;
+    static String position;
 
     CompanyEmployees(){
 
@@ -43,7 +43,7 @@ public class CompanyEmployees {
 
 class Developer extends CompanyEmployees{
 
-    String language;
+    static String language;
 
     Developer(){
         language = "Swift";
