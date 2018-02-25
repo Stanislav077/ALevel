@@ -21,13 +21,14 @@ public class Teacher extends Person {
         this.subject = subject;
     }
 
-    Teacher(String name, int age, String gender, String subject, double salary){
+    Teacher(String name, int age, String gender, String subject, double salary) {
         super(name, age, gender);
         this.subject = subject;
         this.salary = salary;
     }
+
     @Override
-    public String toString(){
-        return super.toString() + ", subject: " + subject + ", salary: " + salary;
+    public String toString() {
+        return super.toString() + ", subject: " + getSubject() + ", salary: " + getSalary();
     }
 }

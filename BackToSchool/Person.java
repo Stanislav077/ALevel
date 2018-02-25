@@ -6,7 +6,7 @@ public class Person {
     private int age;
     private String gender;
 
-    Person(String name, int age, String gender){
+    Person(String name, int age, String gender) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -35,9 +35,10 @@ public class Person {
     public void setGender(String gender) {
         this.gender = gender;
     }
+
     @Override
-    public String toString(){
-        return name + ", age: " + age + ", gender: " + gender;
+    public String toString() {
+        return getName() + ", age: " + getAge() + ", gender: " + getGender();
     }
 
     public static void main(String[] args) {

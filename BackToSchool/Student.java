@@ -6,7 +6,7 @@ public class Student extends Person {
     private double gpa;
 
 
-    Student(String name, int age, String gender, String idNumber, double gpa){
+    Student(String name, int age, String gender, String idNumber, double gpa) {
         super(name, age, gender);
         this.idNumber = idNumber;
         this.gpa = gpa;
@@ -27,7 +27,8 @@ public class Student extends Person {
     public void setGpa(double gpa) {
         this.gpa = gpa;
     }
-    public String toString(){
-        return super.toString() + ", student id: " + idNumber + ", gpa: " + gpa;
+
+    public String toString() {
+        return super.toString() + ", student id: " + getIdNumber() + ", gpa: " + getGpa();
     }
 }
