@@ -3,6 +3,8 @@ package com.shop;
 import com.shop.bag.ATBPacket;
 import com.shop.bag.Bag;
 import com.shop.bag.BagImpl;
+import com.shop.buyer.Buyer;
+import com.shop.buyer.BuyerImpl;
 import com.shop.manager.ShopManager;
 import com.shop.position.Position;
 import com.shop.position.impl.Apple;
@@ -11,6 +13,7 @@ import com.shop.position.impl.abst.AbstractPosition;
 import com.shop.shelf.AppleShelf;
 import com.shop.shelf.PenShelf;
 import com.shop.shelf.Shelf;
+import com.sun.org.apache.xpath.internal.SourceTree;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -25,11 +28,12 @@ public class Main {
 
     static Shelf shelfPen = new PenShelf(penShelf);
     static Shelf shelfApple = new AppleShelf(appleShelf);
+    static Buyer buyer = new BuyerImpl("Uncle Vasya", 100);
+    static Pen currentPen = new Pen(30, "karandash");
+    static Apple currentApple = new Apple(25, "Iablochko");
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Pen currentPen = new Pen(10, "karandash");
-        Apple currentApple = new Apple(25, "Iablochko");
         zavozPen(currentPen);
         zavozApple(currentApple);
         Bag bag;
@@ -69,10 +73,8 @@ public class Main {
 
     private static void doPokupki(Bag bag) {
         Scanner scanner = new Scanner(System.in);
-
+        System.out.println(buyer.lookProfileBueyer());
         while (bag.getNotUsedSize() != 0) {
-            Pen currentPen = new Pen(30, "karandash");
-            Apple currentApple = new Apple(25, "Iablochko");
             System.out.println("1:Pen");
             System.out.println("2:Aple");
             System.out.println("3:Dumay");
@@ -125,7 +127,13 @@ public class Main {
     private static void goNaCassu(Bag bag) {
         ShopManager babaGala = new ShopManager();
         try {
-            babaGala.sum(bag);
+            if(buyer.orderPay(babaGala.sum(bag))){
+                System.out.println("VSE OPLACHENO:");
+                System.out.println("PROFILE POKUPATELYA: " + buyer.lookProfileBueyer());
+            } else{
+                System.out.println("DENEG NET U TEBYA, NO TY DERZHYS'");
+                System.out.println("PROFILE POKUPATELYA: " + buyer.lookProfileBueyer());
+            }
             System.out.println("oi mama, hera tac dorogo");
             System.exit(0);
         } catch (InterruptedException e) {
