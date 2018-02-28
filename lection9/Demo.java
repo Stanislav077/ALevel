@@ -8,29 +8,19 @@ import java.io.IOException;
  * Created by Ivan Isaev on 28.02.2018.
  */
 public class Demo {
-    public static String readTryCatchFinally(String path) {  // try/catch/finally
-        BufferedReader reader = null;
-        try {
-            reader = new BufferedReader(new FileReader(path));
-        } catch (IOException e){
-            e.printStackTrace();
-        }
-        StringBuilder stringBuilder = new StringBuilder();
+    static StringBuilder stringBuilder = null;
+    public static String readTryCatchFinally(String path) {
+        try (BufferedReader reader = new BufferedReader((new FileReader(path)))){
+            stringBuilder = new StringBuilder();
 
-        String currentString;
-        try {
-            while ((currentString = reader.readLine()) != null){
+            String currentString;
+            while ((currentString = reader.readLine()) != null) {
                 stringBuilder.append(currentString);
                 stringBuilder.append("\n");
             }
-        } catch (IOException e) {
+            reader.close();
+        } catch (IOException e){
             e.printStackTrace();
-        } finally {
-            try {
-                reader.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
         }
         return stringBuilder.toString();
     }
