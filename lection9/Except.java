@@ -10,9 +10,9 @@ import java.util.Scanner;
 public class Except {
     public static void main(String[] args) {
         //classCast();
-        //nullPoint();
+        nullPoint();
         //numberFormat();
-        //arrayIndex();
+        arrayIndex();
     }
 
 
@@ -30,11 +30,15 @@ public class Except {
      */
     public static void nullPoint(){
         Integer test = null;
-        int[] a = new int[test];
+        if(test != null){
+            int[] a = new int[test];
+        } else {
+            System.out.println("NullPointerException");
+        }
     }
     /*
        ошибка NumberFormatException принадлежит к RuntimeException тоже лучше не пытаться словить данное исключение, но
-       если есть предположение, что данное исключение все таки нало обработать блоком try/catch
+       если есть предположение, что данное исключение все таки надо обработать блоком try/catch
      */
     public static void numberFormat(){
         String a = "fff";
@@ -46,6 +50,12 @@ public class Except {
      */
     public static void arrayIndex(){
         int a [] = {1, 2, 3};
-        a[3] = 4;
+        int index = 3;
+        if (index < a.length)
+        {
+            a[index] = 4;
+        } else {
+            System.out.println("ArrayIndexOutOfBoundsException");
+        }
     }
 }
