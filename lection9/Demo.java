@@ -18,7 +18,7 @@ public class Demo {
                 stringBuilder.append(currentString);
                 stringBuilder.append("\n");
             }
-            reader.close();
+            // reader.close(); - тупанул, он сам закрывает этот поток в try-with-resources
         } catch (IOException e){
             e.printStackTrace();
         }
