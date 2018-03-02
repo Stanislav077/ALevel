@@ -9,24 +9,26 @@ import java.util.Scanner;
  */
 public class Except {
     public static void main(String[] args) {
-        //classCast();
+        classCast();
         nullPoint();
-        //numberFormat();
+        numberFormat();
         arrayIndex();
     }
-
-
     /*
        ошибка ClassCastException принадлежит к RuntimeException, если данная ошибка возникает лучше обработать блоком
        try/catch
      */
     public static void classCast(){
         Object test = new Date();
-        Integer date = (Integer) test;
+        if (test instanceof Integer){
+            Integer date = (Integer) test;
+        } else{
+            System.out.println("ClassCastException");
+        }
     }
     /*
-       ошибка NullPointerException принадлежит к RuntimeException, тоже лучше не пытаться словить данное исключение и
-       обработать блоком try/catch, а if сделать проверку на null
+       ошибка NullPointerException принадлежит к RuntimeException, тоже лучше не обработать блоком try/catch,
+       а if сделать проверку на null
      */
     public static void nullPoint(){
         Integer test = null;
@@ -37,12 +39,16 @@ public class Except {
         }
     }
     /*
-       ошибка NumberFormatException принадлежит к RuntimeException тоже лучше не пытаться словить данное исключение, но
-       если есть предположение, что данное исключение все таки надо обработать блоком try/catch
+       ошибка NumberFormatException принадлежит к RuntimeException тоже лучше не пытаться словить данное исключение,
+       лучше сделать проверку, подобную такую, как в данном случае
      */
     public static void numberFormat(){
         String a = "fff";
-        int f = Integer.parseInt(a);
+        if (a.getClass().equals(Integer.class)){
+            int f = Integer.parseInt(a);
+        } else {
+            System.out.println("NumberFormatException");
+        }
     }
     /*
         ошибка ArrayIndexOutOfBoundsException принадлежит к RuntimeException, лучше обработать if, чтобы не выйти за
