@@ -10,7 +10,7 @@ public class luckyTicket {
 
     public static void luckyTicket() {
         int sum = 0;
-        for (int i = 000001; i <= 999999; i++) {
+        for (int i = 1; i <= 999999; i++) {
             int n1 = i / 100000;
             int n2 = (i % 100000) / 10000;
             int n3 = (i % 10000) / 1000;
