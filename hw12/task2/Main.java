@@ -25,11 +25,7 @@ public class Main {
     public static void init(){
         for (int i = 0; i < 20; i ++){
             listPosition.add(new Apple(rn.nextInt(8) + 1, "yablochko"));
-<<<<<<< HEAD
             listPosition.add(new Pen(rn.nextInt(8) + 1, "ruchka"));
-=======
-            listPosition.add(new Pen(3, "ruchka"));
->>>>>>> d599d77e6384c278b17b3c531c2342547fe5b5d7
         }
     }
 
