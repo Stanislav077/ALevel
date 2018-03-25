@@ -40,7 +40,7 @@ public class Main {
                 if (array[i] == 0) {
                     continue;
                 }
-                for (int j = 2; j < array.length; j++) {
+                for (int j = 2; j < array[i]; j++) {
                     if (array[i] != j && array[i] % j == 0) {
                         array[i] = 0;
                         break;
