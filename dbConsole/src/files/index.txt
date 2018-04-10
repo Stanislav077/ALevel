@@ -1,0 +1,2 @@
+dept_emp1 one-to-many demployees1(emp_no)
+dept_manager1 many-to-one demployees1(emp_no)
