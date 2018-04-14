@@ -23,6 +23,10 @@ public class Main {
         int finish = in.nextInt();
         System.out.print("Please enter a count Threads:>> ");
         int countThreads = in.nextInt();
+        primeNumber(start, finish, countThreads);
+    }
+
+    public static void primeNumber(int start, int finish, int countThreads){
         ExecutorService executorService = Executors.newFixedThreadPool(countThreads);
         executorService.submit(() -> {
             System.out.println("Runnable at work=)");

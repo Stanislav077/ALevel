@@ -43,6 +43,13 @@ public class MainNIO {
                 }
             }
         } catch (IOException e) {
+            String paths = "E:\\alevel\\src\\hw11\\NIO";
+            Path newP = Paths.get(paths + "/log.txt");
+            try(BufferedWriter bufferedWriter = Files.newBufferedWriter(newP)) {
+                bufferedWriter.write(e.toString());
+            } catch (IOException e1){
+                e1.printStackTrace();
+            }
         }
     }
 }
