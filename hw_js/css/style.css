@@ -1,0 +1,28 @@
+p.sign {
+    text-align: right;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.center {
+    margin: auto;
+    padding: 100px;
+}
+
+.column {
+    margin: 100;
+}
+
+.profile {
+    text-align: center;
+}
