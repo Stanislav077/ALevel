@@ -11,6 +11,7 @@
     <title>Servlet</title>
 </head>
 <body>
-
+    Name: <%= request.getAttribute("name")%><br>
+    Email: <%= request.getAttribute("email")%>
 </body>
 </html>

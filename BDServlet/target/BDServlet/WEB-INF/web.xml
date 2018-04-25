@@ -8,9 +8,17 @@
     <servlet-name>MainServlet</servlet-name>
     <servlet-class>MainServlet</servlet-class>
   </servlet>
+  <servlet>
+        <servlet-name>ProfileServlet</servlet-name>
+        <servlet-class>ProfileServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
     <servlet-name>MainServlet</servlet-name>
-    <url-pattern>/profile</url-pattern>
+    <url-pattern>/profile1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProfileServlet</servlet-name>
+    <url-pattern>/profile2</url-pattern>
   </servlet-mapping>
   <resource-ref>
     <description>DB Connection</description>
