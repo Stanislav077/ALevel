@@ -1,17 +1,19 @@
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+@WebServlet("/profile2")
 public class ProfileServlet extends HttpServlet {
     static SqlUtils sqlUtils = new SqlUtils();
     public static final String ID = "id";
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String coockieId = String.valueOf(sqlUtils.getMaxId());
         Cookie[] cookies = req.getCookies();
         for (Cookie cookie : cookies) {
@@ -30,6 +32,5 @@ public class ProfileServlet extends HttpServlet {
                 }
             }
         }
-        resp.sendRedirect("/index.jsp");
     }
 }

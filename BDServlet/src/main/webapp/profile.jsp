@@ -12,6 +12,7 @@
 </head>
 <body>
     Name: <%= request.getAttribute("name")%><br>
-    Email: <%= request.getAttribute("email")%>
+    Email: <%= request.getAttribute("email")%><br>
+    Url: <a href="main.jsp">Text</a>
 </body>
 </html>

@@ -1,18 +1,16 @@
 <%--
   Created by IntelliJ IDEA.
   User: Ivan Isaev
-  Date: 22.04.2018
-  Time: 19:42
+  Date: 25.04.2018
+  Time: 19:58
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Servlet</title>
+    <title>Error-404</title>
 </head>
 <body>
-    Name: <%= request.getAttribute("name")%><br>
-    Email: <%= request.getAttribute("email")%><br>
-    Url: <a href="main.jsp">Text</a>
+    <p>Errorrrrrrrrrrrrr</p>
 </body>
 </html>

@@ -11,7 +11,7 @@
     <form class="form-group"
           name="Form1"
           method="post"
-          action="http://localhost:8080/BDServlet/profile1">
+          action="profile1">
         <label for="fname" id="fnamelabel">First Name<span style='color:red' id='namef'></span><br /></label>
         <input type="text" id="fname" name="firstname" placeholder="Your name.." class="form-control">
         <label for="email">Email</label>
@@ -23,6 +23,8 @@
     </div>
     </form>
 </div>
-<script type="text/javascript" src="js/script.js"></script>
+<script type='text/javascript' src='https://code.jquery.com/jquery-latest.min.js'></script>
+<script type='text/javascript' src='js/saveform.js'></script>
+<script type="text/javascript" src="js/scrip.js"></script>
 </body>
 </html>

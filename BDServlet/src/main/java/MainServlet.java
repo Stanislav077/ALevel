@@ -1,11 +1,12 @@
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-
-public class MainServlet extends HttpServlet {
+@WebServlet("/profile1")
+public class MainServlet extends HttpServlet{
     static SqlUtils sqlUtils = new SqlUtils();
     public static final String ID = "id";
 
@@ -19,14 +20,8 @@ public class MainServlet extends HttpServlet {
         sqlUtils.insertIntoBd(name, email, String.valueOf(password.hashCode()));
 
         int counter = sqlUtils.getMaxId();
-        Cookie[] cookies = req.getCookies();
-        for (Cookie cookie : cookies) {
-            if (cookie.getName().equals(ID)) {
-                counter = Integer.valueOf(cookie.getValue());
-            }
-        }
         resp.addCookie(new Cookie(ID, String.valueOf(counter)));
 
-        resp.sendRedirect("temp.jsp");
+        resp.sendRedirect("profile2");
     }
 }

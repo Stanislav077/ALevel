@@ -4,22 +4,10 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  <servlet>
-    <servlet-name>MainServlet</servlet-name>
-    <servlet-class>MainServlet</servlet-class>
-  </servlet>
-  <servlet>
-        <servlet-name>ProfileServlet</servlet-name>
-        <servlet-class>ProfileServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>MainServlet</servlet-name>
-    <url-pattern>/profile1</url-pattern>
-  </servlet-mapping>
-  <servlet-mapping>
-    <servlet-name>ProfileServlet</servlet-name>
-    <url-pattern>/profile2</url-pattern>
-  </servlet-mapping>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/error-404.jsp</location>
+  </error-page>
   <resource-ref>
     <description>DB Connection</description>
     <res-ref-name>jdbc/dbservlet</res-ref-name>
