@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ModuleExcel">
+    <output-path>$PROJECT_DIR$/out/artifacts/ModuleExcel</output-path>
+    <root id="archive" name="ModuleExcel.war" />
+  </artifact>
+</component>
