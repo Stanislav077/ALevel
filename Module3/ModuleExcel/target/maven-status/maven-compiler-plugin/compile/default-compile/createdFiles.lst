@@ -1,3 +1,7 @@
 GetDataServlet.class
+DeleteRowServlet.class
 SqlUtils.class
+GetDataServletWithoutRow.class
+GetTableJsonServlet.class
 CreateTableServlet.class
+DropTableServlet.class
