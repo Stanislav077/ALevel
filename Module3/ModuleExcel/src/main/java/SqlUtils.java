@@ -1,3 +1,4 @@
+import com.google.gson.JsonObject;
 import org.json.*;
 import java.awt.*;
 import java.sql.*;
@@ -6,6 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SqlUtils {
+    public static ArrayList<String> arrayId = new ArrayList<>();
     public static final String NAME_COL = "col";
     static int count = 0;
 
@@ -19,15 +21,16 @@ public class SqlUtils {
         String typeCol = " VARCHAR (255)";
         for (int i = 0; i <= col; i++) {
             if(i == 0){
-                nameCol += "row int(11) NOT NULL AUTO_INCREMENT, ";
+                nameCol += "id int(11) NOT NULL AUTO_INCREMENT, ";
             }
             else if (i == col) {
-                nameCol += NAME_COL + i + " " + typeCol + ", PRIMARY KEY (row));";
+                nameCol += NAME_COL + i + " " + typeCol + ", PRIMARY KEY (id));";
             } else {
                 nameCol += NAME_COL + i + " " + typeCol + ",";
             }
 
             String query = "CREATE TABLE " + nameTable + " (" + nameCol;
+            System.out.println(query);
             try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/excel",
                     "root", "root");
                  Statement statement = connection.createStatement();
@@ -53,7 +56,7 @@ public class SqlUtils {
             } else if (i == 0) {
                 for (int j = 0; j <= length; j++) {
                     if(j == 0){
-                        query += "(row, ";
+                        query += "(id,";
                     } else if(j == 1){
                         query += NAME_COL + j + ",";
                     } else if (j == length) {
@@ -106,7 +109,6 @@ public class SqlUtils {
                 query += "'" + parseData(data) + "',";
             }
         }
-        System.out.println(query);
         try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/excel",
                 "root", "root");
              Statement statement = connection.createStatement();
@@ -142,7 +144,7 @@ public class SqlUtils {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        String query = "DELETE FROM " + nametable + " WHERE row = " + row + ";";
+        String query = "DELETE FROM " + nametable + " WHERE id = " + row + ";";
         try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/excel",
                 "root", "root");
              Statement statement = connection.createStatement();
@@ -153,51 +155,14 @@ public class SqlUtils {
         }
     }
 
-    /*public static String[] getTable(String nametable){
-        String[] arr = {};
+
+    public static ArrayList<JsonObject> getJson(String nametable){
         try {
             Class.forName("com.mysql.jdbc.Driver");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        String query = "SELECT * FROM " + nametable + ";";
-        try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/excel",
-                "root", "root");
-             Statement statement = connection.createStatement();
-             ResultSet resultSet = statement.executeQuery(query)) {
-
-            int columns = resultSet.getMetaData().getColumnCount();
-            ArrayList<String> nameColumn = new ArrayList<>();
-            ArrayList<String> data = new ArrayList<>();
-            while (resultSet.next()){
-                for(int i = 1; i <= columns; i++) {
-                    if (i == 1) {
-                        nameColumn.add("row");
-                        data.add(resultSet.getString(i));
-                    } else {
-                        nameColumn.add("col" + (i-1));
-                        data.add(resultSet.getString(i));
-                    }
-                }
-            }
-            arr = new String[nameColumn.size()];
-            for(int i = 0; i < nameColumn.size(); i++){
-                arr[i] = nameColumn.get(i) + " " + data.get(i);
-            }
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return arr;
-    }*/
-
-    public static ArrayList<JSONObject> getJson(String nametable){
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-        ArrayList<JSONObject> resList = new ArrayList<>();
+        ArrayList<JsonObject> resList = new ArrayList<>();
         ArrayList<String> nameColumns = new ArrayList<>();
         String query = "SELECT * FROM " + nametable + ";";
         try (Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/excel",
@@ -209,13 +174,18 @@ public class SqlUtils {
                 nameColumns.add(resultSet.getMetaData().getColumnName(i));
             }
             while (resultSet.next()){
-                JSONObject jsonObject = new JSONObject();
+                JsonObject jsonObject = new JsonObject();
                 for(int j = 1; j <= columns; j++){
-                    String key = nameColumns.get(j-1);
-                    String value = resultSet.getString(j);
-                    jsonObject.put(key, value);
-                    System.out.println(key);
-                    System.out.println(value);
+                    if(j == 1){
+                        arrayId.add(resultSet.getString(j));
+                    }
+                    else {
+                        String key = nameColumns.get(j-1);
+                        String value = resultSet.getString(j);
+                        jsonObject.addProperty(key, value);
+                        System.out.println(key);
+                        System.out.println(value);
+                    }
                 }
                 resList.add(jsonObject);
             }
@@ -235,5 +205,9 @@ public class SqlUtils {
             break;
         }
         return temp;
+    }
+
+    public static ArrayList<String> getArrayId() {
+        return arrayId;
     }
 }

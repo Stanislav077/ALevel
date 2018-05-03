@@ -18,19 +18,25 @@ public class GetTableJsonServlet extends HttpServlet {
                          HttpServletResponse resp)
             throws ServletException, IOException {
         String nametable = req.getParameter("tablename7");
-        ArrayList<JSONObject> jsonData = sqlUtils.getJson(nametable);
-        //ArrayList<JsonObject> jsonObjectArray = new ArrayList<>();
-        //JsonObject jsonObject;
+        ArrayList<JsonObject> jsonData = sqlUtils.getJson(nametable);
         PrintWriter writer = resp.getWriter();
-        for(int i = 0; i < jsonData.size(); i++){
-            writer.println(jsonData.get(i));
-            System.out.println(jsonData.get(i));
+        for(int i = 0; i < jsonData.size(); i++) {
+            if(jsonData.size() == 1){
+                writer.print("{" + sqlUtils.getArrayId().get(i) + ":");
+                writer.print(jsonData.get(i) + "}");
+                break;
+            } else if(i==0){
+                writer.print("{" + sqlUtils.getArrayId().get(i) + ":");
+                writer.print(jsonData.get(i) + ", ");
+            } else if (i == jsonData.size()-1){
+                writer.print(sqlUtils.getArrayId().get(i) +  ":");
+                writer.print(jsonData.get(i) + "}");
+            } else {
+                writer.print(sqlUtils.getArrayId().get(i) + ":");
+                writer.print(jsonData.get(i) + ", ");
+            }
+
         }
-        /*for(int i = 0; i < jsonData.length; i++){
-            jsonObject = new JsonObject();
-            jsonObject.addProperty(jsonData[i].split(" ")[0], jsonData[i].split(" ")[1]);
-            writer.println(jsonObject);
-        }*/
         writer.flush();
         writer.close();
     }
