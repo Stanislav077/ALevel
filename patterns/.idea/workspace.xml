@@ -11,49 +11,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/builder/Person.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="StringMethod.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/wrapper/StringMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+            <state relative-caret-position="68">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
               <folding>
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#524#525#0" expanded="true" />
-                <element signature="e#556#557#0" expanded="true" />
-                <element signature="e#593#594#0" expanded="true" />
-                <element signature="e#626#627#0" expanded="true" />
-                <element signature="e#663#664#0" expanded="true" />
-                <element signature="e#696#697#0" expanded="true" />
-                <element signature="e#729#730#0" expanded="true" />
-                <element signature="e#758#759#0" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#834#835#0" expanded="true" />
-                <element signature="e#865#866#0" expanded="true" />
-                <element signature="e#892#893#0" expanded="true" />
-                <element signature="e#924#925#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#985#986#0" expanded="true" />
-                <element signature="e#1016#1017#0" expanded="true" />
-                <element signature="e#1051#1052#0" expanded="true" />
-                <element signature="e#1084#1085#0" expanded="true" />
-                <element signature="e#1121#1122#0" expanded="true" />
-                <element signature="e#1156#1157#0" expanded="true" />
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
-                <element signature="e#1684#1685#0" expanded="true" />
-                <element signature="e#1718#1719#0" expanded="true" />
+                <element signature="e#120#121#0" expanded="true" />
+                <element signature="e#156#157#0" expanded="true" />
+                <element signature="e#189#190#0" expanded="true" />
+                <element signature="e#239#240#0" expanded="true" />
+                <element signature="e#291#292#0" expanded="true" />
+                <element signature="e#341#342#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Demo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/builder/Demo.java">
+        <entry file="file://$PROJECT_DIR$/src/wrapper/Demo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
+            <state relative-caret-position="102">
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -81,10 +61,14 @@
         <option value="$PROJECT_DIR$/src/wrapper/SimpleString.java" />
         <option value="$PROJECT_DIR$/src/wrapper/StringWrapper.java" />
         <option value="$PROJECT_DIR$/src/wrapper/StringInterface.java" />
-        <option value="$PROJECT_DIR$/src/wrapper/Demo.java" />
-        <option value="$PROJECT_DIR$/src/wrapper/StringMethod.java" />
         <option value="$PROJECT_DIR$/src/builder/Person.java" />
         <option value="$PROJECT_DIR$/src/builder/Demo.java" />
+        <option value="$PROJECT_DIR$/src/adapter/AdapterPerson.java" />
+        <option value="$PROJECT_DIR$/src/adapter/Demo.java" />
+        <option value="$PROJECT_DIR$/src/pool/PoolConnection.java" />
+        <option value="$PROJECT_DIR$/src/pool/Demo.java" />
+        <option value="$PROJECT_DIR$/src/wrapper/Demo.java" />
+        <option value="$PROJECT_DIR$/src/wrapper/StringMethod.java" />
       </list>
     </option>
   </component>
@@ -108,8 +92,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,7 +110,19 @@
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
               <item name="patterns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="adapter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="builder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="patterns" type="b2602c69:ProjectViewProjectNode" />
@@ -144,14 +140,22 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -165,7 +169,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Demo (1)">
+  <component name="RunManager" selected="Application.Demo (3)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -176,6 +180,28 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="builder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Demo (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="adapter.Demo" />
+      <module name="patterns" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="adapter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Demo (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pool.Demo" />
+      <module name="patterns" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pool.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -250,11 +276,15 @@
     <list>
       <item itemvalue="Application.Demo" />
       <item itemvalue="Application.Demo (1)" />
+      <item itemvalue="Application.Demo (2)" />
+      <item itemvalue="Application.Demo (3)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Demo (1)" />
+        <item itemvalue="Application.Demo (3)" />
         <item itemvalue="Application.Demo" />
+        <item itemvalue="Application.Demo (2)" />
+        <item itemvalue="Application.Demo (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -269,18 +299,20 @@
       <option name="presentableId" value="Default" />
       <updated>1527093126510</updated>
       <workItem from="1527093132520" duration="8954000" />
+      <workItem from="1527322756162" duration="3732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8954000" />
+    <option name="totallyTimeSpent" value="12686000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="5" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Messages" weight="0.32954547" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32954547" />
       <window_info anchor="right" id="Palette&#9;" order="1" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
@@ -288,11 +320,11 @@
       <window_info anchor="right" id="Maven Projects" order="4" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49924356" weight="0.2711039" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49924356" visible="true" weight="0.2711039" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.14901665" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.15128593" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
@@ -300,13 +332,43 @@
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.39935064" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="right" id="Commander" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="0" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49924356" visible="true" weight="0.2711039" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.15128593" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info id="UI Designer" order="1" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39935064" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50075644" side_tool="true" weight="0.32954547" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Commander" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32954547" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -320,20 +382,22 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Singleton.java">
+    <entry file="file://$PROJECT_DIR$/src/builder/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
+        <state relative-caret-position="1275">
+          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StringWrapper.java">
+    <entry file="file://$PROJECT_DIR$/src/builder/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        <state relative-caret-position="85">
+          <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Singleton.java" />
+    <entry file="file://$PROJECT_DIR$/src/StringWrapper.java" />
     <entry file="file://$PROJECT_DIR$/src/singleton/Singleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -345,28 +409,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/wrapper/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/wrapper/SimpleString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-          <folding>
-            <element signature="e#125#126#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-            <element signature="e#192#193#0" expanded="true" />
-            <element signature="e#229#230#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/wrapper/String.java" />
+    <entry file="file://$PROJECT_DIR$/src/wrapper/SimpleString.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-204">
@@ -382,22 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="399" column="17" lean-forward="true" selection-start-line="399" selection-start-column="17" selection-end-line="399" selection-end-column="17" />
-          <folding>
-            <element signature="e#2871#2872#0" expanded="true" />
-            <element signature="e#2896#2897#0" expanded="true" />
-            <element signature="e#3272#3273#0" expanded="true" />
-            <element signature="e#3303#3304#0" expanded="true" />
-            <element signature="e#4161#4162#0" expanded="true" />
-            <element signature="e#4211#4212#0" expanded="true" />
-            <element signature="e#10229#10230#0" expanded="true" />
-            <element signature="e#10270#10271#0" expanded="true" />
-            <element signature="e#10337#10338#0" expanded="true" />
-            <element signature="e#10389#10390#0" expanded="true" />
-            <element signature="e#10445#10446#0" expanded="true" />
-            <element signature="e#10490#10491#0" expanded="true" />
-            <element signature="e#10561#10562#0" expanded="true" />
-            <element signature="e#10617#10618#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -419,21 +447,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/wrapper/StringWrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-          <folding>
-            <element signature="e#232#233#0" expanded="true" />
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#147#148#0" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/builder/Builder.java" />
     <entry file="file://$PROJECT_DIR$/src/wrapper/StringInterface.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -441,13 +455,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/wrapper/StringWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding>
+            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/builder/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/builder/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adapter/AdapterPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/adapter/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pool/PoolConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="32" column="58" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pool/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/wrapper/StringMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        <state relative-caret-position="68">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
           <folding>
-            <element signature="e#136#137#0" expanded="true" />
-            <element signature="e#159#160#0" expanded="true" />
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#189#190#0" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -455,65 +532,88 @@
     <entry file="file://$PROJECT_DIR$/src/wrapper/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/builder/Builder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/builder/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="75" column="31" selection-start-line="75" selection-start-column="31" selection-end-line="75" selection-end-column="31" />
-          <folding>
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#593#594#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#729#730#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-            <element signature="e#834#835#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#985#986#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-            <element signature="e#1051#1052#0" expanded="true" />
-            <element signature="e#1084#1085#0" expanded="true" />
-            <element signature="e#1121#1122#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#1684#1685#0" expanded="true" />
-            <element signature="e#1718#1719#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/builder/Demo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="77" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="32" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>patterns</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>mysql:mysql-connector-java:5.1.43</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,20 +1,22 @@
 package wrapper;
 
-public class StringMethod extends StringWrapper {
+public class StringMethod {
 
-    private String string;
+    String string;
 
-    public StringMethod(String string) {
-        super(string);
+    StringMethod(String string){
+        this.string = string;
     }
 
-    public String concat(String string){
-        string = this.string + string;
-        return string;
+    public void concat(String string){
+        this.string = this.string + string;
     }
 
-    public String toUpperCase(String string){
-        string = string.toUpperCase();
-        return string;
+    public void toUpperCase(String string){
+        this.string = string.toUpperCase();
+    }
+
+    public String toString(){
+        return this.string;
     }
 }
